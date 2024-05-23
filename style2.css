@@ -1,0 +1,117 @@
+
+th{
+    border: 5px inset black;
+}
+td{
+    border: 5px inset black;
+}
+table{
+    background-image: url("https://avatars.mds.yandex.net/i?id=2dc40efc05df6324d82e2137635d3d17a5dc862b-4216502-images-thumbs&n=13");
+}
+.stal{
+    width: 480px;
+    height: 300px;
+    animation-name: flag;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes flag{
+    25%{
+        background-image: url("https://avatars.mds.yandex.net/i?id=97c29f7f721538a6e1f34edb77a63442c09562e6-9895871-images-thumbs&n=13");
+    }
+    50%{
+        background-image: url("https://avatars.mds.yandex.net/i?id=0be4d6fe025274933b8b837575cdc50de54366bf-9690504-images-thumbs&n=13");
+    }
+    75%{
+        background-image: url("https://avatars.mds.yandex.net/i?id=031079cda34f352da0b452fc7af5496ee4f07575-12615826-images-thumbs&n=13");
+    }
+    100%{
+        background-image: url("https://avatars.mds.yandex.net/i?id=ce52cca6da4fa6f4875fc46229fe7454a48826cc-5231964-images-thumbs&n=13");
+    }
+}
+body{
+    background-color: cadetblue;
+    width: 700px;
+    margin: 250px;
+    border: 5px inset black;
+}
+footer{
+    background-color: rgb(60, 106, 107);
+    height: 100px;
+}
+header{
+    background-color: rgb(60, 106, 107);
+    height: 100px;
+}
+a{
+    margin-left: 100px;
+    padding-top: 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.pre{
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+    position: fixed;
+    z-index: 3;
+    left:0;
+    top:0;
+    }
+    
+    .spinner {
+    height: 100vh;
+    position: relative;
+    &::before {
+    content: "";
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 5px #eee;
+    border-bottom-color: #0097a7;
+    border-radius: 50%;
+    }
+    }
+    
+    @keyframes spinner {
+    0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    }
+    }
+    .spinner {
+    height: 100vh;
+    position: relative;
+    opacity: 1;
+    transition: opacity linear 0.1s;
+    &::before {
+    content: "";
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 5px #eee;
+    border-bottom-color: #0097a7;
+    border-radius: 50%;
+    animation: 2s linear infinite spinner;
+    will-change: transform;
+    }
+    }
+    .b{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    }
+
+
+
+
+
